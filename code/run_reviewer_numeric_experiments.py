@@ -17,7 +17,7 @@ from torch.utils.data import DataLoader
 
 from causalgait.data import describe_records, discover_subjects, find_dataset_root, select_subjects
 from causalgait.features import StandardScaler, _feature_rows_for_sequences
-from causalgait.utils import choose_device, ensure_dir, parse_int_list, save_json, write_dict_csv
+from causalgait.utils import choose_device, ensure_dir, parse_int_list, save_json, stable_seed, write_dict_csv
 from run_enhanced_publishable_experiment import (
     EnhancedPrepared,
     EnhancedSpec,
@@ -422,7 +422,7 @@ def run_robustness(args: argparse.Namespace, records: Sequence[Any], device: tor
         if not checkpoints:
             raise FileNotFoundError(f"No checkpoints found under {subject_dir}")
         for condition in conditions:
-            rng = np.random.default_rng(abs(hash((record.subject, condition))) % (2**32))
+            rng = np.random.default_rng(stable_seed(2026, record.subject, condition))
             scaled_features = make_perturbed_features(prepared, condition, rng)
             y_true, y_pred = ensemble_predict(prepared, spec, args, scaled_features, checkpoints, device)
             metrics = compute_metrics(y_true, y_pred)
@@ -492,4 +492,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

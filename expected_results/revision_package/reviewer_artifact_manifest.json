@@ -1,6 +1,6 @@
 {
-  "artifact_root": "C:\\Users\\ali\\Desktop\\CausalGaint\\code\\artifacts_enhanced_publishable_remote",
-  "data_root": "C:\\Users\\ali\\Desktop\\CausalGaint\\SEMG_DB1\\SEMG_DB1",
+  "artifact_root": "outputs/artifacts_enhanced_publishable_reproduced",
+  "data_root": "data/SEMG_DB1/SEMG_DB1",
   "generated_figures": [
     "experimental_setup_schematic.png",
     "feature_correlation_matrix.png",
@@ -38,7 +38,8 @@
   "main_model": "transformer_4ch_extended",
   "notes": [
     "RF/SVR/XGBoost baselines are generated when scikit-learn and xgboost are installed.",
-    "LOSO ridge is a lightweight cross-subject baseline and does not replace a full cross-subject Transformer experiment."
+    "LOSO ridge is a lightweight cross-subject baseline and does not replace a full cross-subject Transformer experiment.",
+    "Paths are repository-relative so the package can be cloned to any machine."
   ],
   "paper_threshold": {
     "mae": 3.707,

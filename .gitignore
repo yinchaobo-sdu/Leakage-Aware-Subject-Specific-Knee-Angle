@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Generated experiment artifacts. Reference artifacts live under expected_results/.
+outputs/
+code/artifacts*/
+code/revision_package/
+
+# Local machine/editor files.
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
