@@ -1,0 +1,69 @@
+{
+  "candidates": [
+    {
+      "eligible_for_main_selection": true,
+      "mean_val_mae": 5.559345928105441,
+      "mean_val_rmse": 7.603604925231139,
+      "model": "causalgaitnet_4ch_extended",
+      "n_subjects": 22,
+      "role": "candidate"
+    },
+    {
+      "eligible_for_main_selection": true,
+      "mean_val_mae": 5.806549960916692,
+      "mean_val_rmse": 8.036249229878631,
+      "model": "causalgaitnet_multihorizon_4ch_extended",
+      "n_subjects": 22,
+      "role": "candidate"
+    },
+    {
+      "eligible_for_main_selection": false,
+      "mean_val_mae": 5.353135152296587,
+      "mean_val_rmse": 7.899084985142789,
+      "model": "mlp_rf_vm_original",
+      "n_subjects": 22,
+      "role": "baseline"
+    },
+    {
+      "eligible_for_main_selection": true,
+      "mean_val_mae": 5.188848370855505,
+      "mean_val_rmse": 7.079165383958928,
+      "model": "transformer_4ch_extended",
+      "n_subjects": 22,
+      "role": "candidate"
+    },
+    {
+      "eligible_for_main_selection": true,
+      "mean_val_mae": 6.288248809901151,
+      "mean_val_rmse": 9.1949101093608,
+      "model": "transformer_rf_vm_original",
+      "n_subjects": 22,
+      "role": "candidate"
+    }
+  ],
+  "note": "Only validation rows are used for selecting the main configuration; test rows for non-selected models are exploratory.",
+  "selected_model": "transformer_4ch_extended",
+  "selected_spec": {
+    "channels": [
+      "RF",
+      "BF",
+      "VM",
+      "ST"
+    ],
+    "d_model": 192,
+    "dropout": 0.05,
+    "encoder_layers": 2,
+    "feature_scaler": "standard",
+    "feature_set": "extended",
+    "ff_dim": 384,
+    "heads": 6,
+    "horizons": [
+      1
+    ],
+    "model_name": "transformer",
+    "name": "transformer_4ch_extended",
+    "role": "candidate",
+    "target_scaler": "standard"
+  },
+  "selection_metric": "mean validation MAE across subjects"
+}

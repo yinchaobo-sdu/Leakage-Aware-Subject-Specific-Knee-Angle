@@ -1,0 +1,10 @@
+model,group,n_subjects,ME,MAE,RMSE,protocol,tuning,sample_step,max_train_per_subject
+random_forest,overall,22,-0.6070504516621921,7.914037483307624,11.361653881652664,purged_temporal_train_only_scaler_single_feature_row,"[{""max_depth"": 8, ""min_samples_leaf"": 2}, {""max_depth"": 14, ""min_samples_leaf"": 1}]",20,2500
+random_forest,healthy,11,0.5475701990319919,8.627583740346774,11.788121473324804,purged_temporal_train_only_scaler_single_feature_row,"[{""max_depth"": 8, ""min_samples_leaf"": 2}, {""max_depth"": 14, ""min_samples_leaf"": 1}]",20,2500
+random_forest,unhealthy,11,-1.761671102356376,7.200491226268471,10.935186289980521,purged_temporal_train_only_scaler_single_feature_row,"[{""max_depth"": 8, ""min_samples_leaf"": 2}, {""max_depth"": 14, ""min_samples_leaf"": 1}]",20,2500
+svr_rbf,overall,22,-2.3293689076204385,8.902909723924086,12.556560081535535,purged_temporal_train_only_scaler_single_feature_row,"[{""C"": 1.0, ""epsilon"": 0.5}, {""C"": 10.0, ""epsilon"": 0.5}]",20,2500
+svr_rbf,healthy,11,-3.6751618227695193,9.583979646693454,13.490222703571469,purged_temporal_train_only_scaler_single_feature_row,"[{""C"": 1.0, ""epsilon"": 0.5}, {""C"": 10.0, ""epsilon"": 0.5}]",20,2500
+svr_rbf,unhealthy,11,-0.9835759924713572,8.22183980115472,11.622897459499601,purged_temporal_train_only_scaler_single_feature_row,"[{""C"": 1.0, ""epsilon"": 0.5}, {""C"": 10.0, ""epsilon"": 0.5}]",20,2500
+xgboost,overall,22,-0.5226304777603912,7.977936360669676,11.168396498003291,purged_temporal_train_only_scaler_single_feature_row,"[{""learning_rate"": 0.05, ""max_depth"": 3}, {""learning_rate"": 0.05, ""max_depth"": 5}]",20,2500
+xgboost,healthy,11,0.7637373592567525,8.439443008593841,11.281151242073584,purged_temporal_train_only_scaler_single_feature_row,"[{""learning_rate"": 0.05, ""max_depth"": 3}, {""learning_rate"": 0.05, ""max_depth"": 5}]",20,2500
+xgboost,unhealthy,11,-1.8089983147775348,7.516429712745506,11.055641753932997,purged_temporal_train_only_scaler_single_feature_row,"[{""learning_rate"": 0.05, ""max_depth"": 3}, {""learning_rate"": 0.05, ""max_depth"": 5}]",20,2500

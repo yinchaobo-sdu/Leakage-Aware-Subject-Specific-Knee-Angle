@@ -1,0 +1,3 @@
+metric,healthy_mean,unhealthy_mean,difference_healthy_minus_unhealthy,permutation_p_two_sided,cliffs_delta_healthy_vs_unhealthy,test
+MAE,7.394005905498158,5.199192805723711,2.1948130997744473,0.031984007996002,0.45454545454545453,two-sided permutation test on subject-level means
+RMSE,10.006384570922286,8.061445944984078,1.9449386259382084,0.10044977511244378,0.2892561983471074,two-sided permutation test on subject-level means

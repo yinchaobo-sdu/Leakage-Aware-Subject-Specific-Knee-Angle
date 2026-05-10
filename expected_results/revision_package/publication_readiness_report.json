@@ -1,0 +1,23 @@
+{
+  "beats_paper_table_i": false,
+  "evaluation_mode": "enhanced_publishable",
+  "main_result_overall": {
+    "mae": 6.296599355610934,
+    "me": -1.036351821639321,
+    "model": "transformer_4ch_extended",
+    "n_subjects": 22,
+    "rmse": 9.033915257953181
+  },
+  "notes": [
+    "Main protocol uses purged temporal splits and train-only feature/target scalers.",
+    "No historical knee angle input, full-series scaling, random-overlap test split, nearest-label lookup, or overlap-aware label postprocessing is used.",
+    "Non-selected test rows are exploratory and must not be used for model selection."
+  ],
+  "paper_chasing_results_usable_as_main_claim": false,
+  "publication_safe_protocol": true,
+  "selected_model": "transformer_4ch_extended",
+  "target": {
+    "mae": 3.707,
+    "rmse": 4.691
+  }
+}

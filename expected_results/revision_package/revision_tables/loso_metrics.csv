@@ -1,0 +1,23 @@
+held_out_subject,status,model,n_train_samples_downsampled,n_test_samples_downsampled,downsample_step,ME,MAE,RMSE,note
+1Nmar,healthy,LOSO_ridge_4ch_extended_nonsequence,39517,544,10,-8.76717898704748,13.275164386457542,19.55629464822205,Cross-subject ridge baseline using extended feature rows; not sequence Transformer.
+2Nmar,healthy,LOSO_ridge_4ch_extended_nonsequence,39347,714,10,-6.816032157799703,14.233875742641377,20.48457797023206,Cross-subject ridge baseline using extended feature rows; not sequence Transformer.
+3Nmar,healthy,LOSO_ridge_4ch_extended_nonsequence,39393,668,10,21.524852287114943,22.157482345607516,32.01518677246144,Cross-subject ridge baseline using extended feature rows; not sequence Transformer.
+4Nmar,healthy,LOSO_ridge_4ch_extended_nonsequence,39333,728,10,24.241505527968872,25.136715045794837,32.05433008945058,Cross-subject ridge baseline using extended feature rows; not sequence Transformer.
+5Nmar,healthy,LOSO_ridge_4ch_extended_nonsequence,39429,632,10,-2.9909131745018356,18.771174855859503,23.884369274868348,Cross-subject ridge baseline using extended feature rows; not sequence Transformer.
+6Nmar,healthy,LOSO_ridge_4ch_extended_nonsequence,39355,706,10,34.468474573928766,34.468474573928766,39.55647522684306,Cross-subject ridge baseline using extended feature rows; not sequence Transformer.
+7Nmar,healthy,LOSO_ridge_4ch_extended_nonsequence,39271,790,10,1.8997809336409495,11.716213322266519,14.830680995401393,Cross-subject ridge baseline using extended feature rows; not sequence Transformer.
+8Nmar,healthy,LOSO_ridge_4ch_extended_nonsequence,39163,898,10,-0.17020964984617823,15.952524479784273,19.685644808008675,Cross-subject ridge baseline using extended feature rows; not sequence Transformer.
+9Nmar,healthy,LOSO_ridge_4ch_extended_nonsequence,39551,510,10,-10.239178615718748,13.362254793051997,16.265145385919535,Cross-subject ridge baseline using extended feature rows; not sequence Transformer.
+10Nmar,healthy,LOSO_ridge_4ch_extended_nonsequence,39501,560,10,-4.104905505961734,12.766086453870315,16.52601236719367,Cross-subject ridge baseline using extended feature rows; not sequence Transformer.
+11Nmar,healthy,LOSO_ridge_4ch_extended_nonsequence,39496,565,10,-9.950460684395436,15.391390057249836,19.717003659780783,Cross-subject ridge baseline using extended feature rows; not sequence Transformer.
+1Amar,unhealthy,LOSO_ridge_4ch_extended_nonsequence,38788,1273,10,26.102824062686828,26.130339748900685,33.35510482578718,Cross-subject ridge baseline using extended feature rows; not sequence Transformer.
+2Amar,unhealthy,LOSO_ridge_4ch_extended_nonsequence,38978,1083,10,8.972213931187868,13.978827022488412,18.113036690215807,Cross-subject ridge baseline using extended feature rows; not sequence Transformer.
+3Amar,unhealthy,LOSO_ridge_4ch_extended_nonsequence,35719,4342,10,-12.906446526890672,14.724868607975429,20.822577131828066,Cross-subject ridge baseline using extended feature rows; not sequence Transformer.
+4Amar,unhealthy,LOSO_ridge_4ch_extended_nonsequence,34431,5630,10,-6.062790385306962,14.294601399327615,19.192639214954152,Cross-subject ridge baseline using extended feature rows; not sequence Transformer.
+5Amar,unhealthy,LOSO_ridge_4ch_extended_nonsequence,35481,4580,10,-13.788935433165326,14.93459164455205,20.98854094239442,Cross-subject ridge baseline using extended feature rows; not sequence Transformer.
+6Amar,unhealthy,LOSO_ridge_4ch_extended_nonsequence,34948,5113,10,-0.6458626602928333,14.469220699773345,18.31536332594451,Cross-subject ridge baseline using extended feature rows; not sequence Transformer.
+7Amar,unhealthy,LOSO_ridge_4ch_extended_nonsequence,38513,1548,10,8.438541154364765,19.803982682450403,22.502944182189246,Cross-subject ridge baseline using extended feature rows; not sequence Transformer.
+8Amar,unhealthy,LOSO_ridge_4ch_extended_nonsequence,39067,994,10,25.037028947317214,25.70932289076534,33.68341249156315,Cross-subject ridge baseline using extended feature rows; not sequence Transformer.
+9Amar,unhealthy,LOSO_ridge_4ch_extended_nonsequence,36877,3184,10,19.082374827970966,20.34220916906057,28.890043037021695,Cross-subject ridge baseline using extended feature rows; not sequence Transformer.
+10Amar,unhealthy,LOSO_ridge_4ch_extended_nonsequence,37796,2265,10,-22.630738491186506,22.86617269142179,29.884182066925163,Cross-subject ridge baseline using extended feature rows; not sequence Transformer.
+11Amar,unhealthy,LOSO_ridge_4ch_extended_nonsequence,37327,2734,10,-11.186510651153068,13.491504740011347,18.29268539218601,Cross-subject ridge baseline using extended feature rows; not sequence Transformer.

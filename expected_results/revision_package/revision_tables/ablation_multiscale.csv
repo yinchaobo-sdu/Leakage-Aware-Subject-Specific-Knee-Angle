@@ -1,0 +1,4 @@
+ablation,status,implementation_note,model,scales,seed_or_ensemble,MAE,RMSE
+No-multiscale branch,completed,Transformer trained with scales=1 under purged temporal protocol.,transformer_4ch_extended_nomultiscale,1,42,6.64152082529935,9.792290598228009
+Multi-scale branch,completed,"Same Transformer family trained with scales=1,2,4,8.",transformer_4ch_extended,"1,2,4,8",42,6.319147890264338,9.036170721663737
+Delta no-multiscale minus multi-scale,completed,Positive delta means multi-scale is better.,delta,,42,0.32237293503501174,0.7561198765642718

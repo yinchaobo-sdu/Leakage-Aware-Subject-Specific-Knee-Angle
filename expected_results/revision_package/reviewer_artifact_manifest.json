@@ -1,0 +1,47 @@
+{
+  "artifact_root": "C:\\Users\\ali\\Desktop\\CausalGaint\\code\\artifacts_enhanced_publishable_remote",
+  "data_root": "C:\\Users\\ali\\Desktop\\CausalGaint\\SEMG_DB1\\SEMG_DB1",
+  "generated_figures": [
+    "experimental_setup_schematic.png",
+    "feature_correlation_matrix.png",
+    "prediction_healthy_8Nmar.png",
+    "prediction_unhealthy_3Amar.png",
+    "protocol_leakage_diagram.png"
+  ],
+  "generated_tables": [
+    "ablation_model_components.csv",
+    "ablation_multiscale.csv",
+    "ablation_multiscale_by_subject.csv",
+    "baseline_comparison.csv",
+    "dataset_summary.csv",
+    "feature_correlation.csv",
+    "healthy_unhealthy_statistics.csv",
+    "literature_comparison.csv",
+    "loso_metrics.csv",
+    "loso_summary.csv",
+    "robustness_by_subject.csv",
+    "robustness_summary.csv",
+    "statistical_tests.csv",
+    "subject_performance_extremes.csv",
+    "traditional_baseline_summary.csv",
+    "traditional_baselines_by_subject.csv"
+  ],
+  "reviewer_documents": [
+    "cover_letter_to_editor.md",
+    "response_to_reviewers.md",
+    "revised_manuscript_insertions.md",
+    "revised_manuscript_draft.md",
+    "revision_checklist.md",
+    "PUBLICATION_DECISION_CN.md",
+    "README.md"
+  ],
+  "main_model": "transformer_4ch_extended",
+  "notes": [
+    "RF/SVR/XGBoost baselines are generated when scikit-learn and xgboost are installed.",
+    "LOSO ridge is a lightweight cross-subject baseline and does not replace a full cross-subject Transformer experiment."
+  ],
+  "paper_threshold": {
+    "mae": 3.707,
+    "rmse": 4.691
+  }
+}

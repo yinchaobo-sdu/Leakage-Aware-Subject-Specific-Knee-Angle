@@ -1,0 +1,161 @@
+{
+  "args": {
+    "batch_size": 64,
+    "channels": "RF,BF,VM,ST",
+    "d_model": 192,
+    "data_root": "C:\\Users\\ali\\Desktop\\CausalGaint\\\u53ef\u590d\u73b0\\data\\SEMG_DB1",
+    "device": "auto",
+    "dropout": 0.05,
+    "early_stopping_patience": 25,
+    "encoder_layers": 2,
+    "epochs": 1,
+    "feature_scaler": "standard",
+    "feature_set": "extended",
+    "feature_step": 1,
+    "feature_window": 250,
+    "ff_dim": 384,
+    "grad_clip": 1.0,
+    "heads": 6,
+    "horizons": "1,5,10,20",
+    "input_noise_std": 0.01,
+    "lr": 0.0003,
+    "max_subjects": 0,
+    "no_cache": false,
+    "no_plots": true,
+    "num_workers": 0,
+    "output_dir": "C:\\Users\\ali\\Desktop\\CausalGaint\\\u53ef\u590d\u73b0\\outputs\\smoke",
+    "scales": "1,2,4,8",
+    "seeds": "42",
+    "selection_seeds": "42",
+    "seq_len": 128,
+    "skip_selection": false,
+    "subjects": "1Nmar",
+    "target_mae": 3.707,
+    "target_rmse": 4.691,
+    "target_scaler": "standard",
+    "weight_decay": 0.0001
+  },
+  "data_root": "C:\\Users\\ali\\Desktop\\CausalGaint\\\u53ef\u590d\u73b0\\data\\SEMG_DB1\\SEMG_DB1",
+  "device": "cuda",
+  "output_dir": "C:\\Users\\ali\\Desktop\\CausalGaint\\\u53ef\u590d\u73b0\\outputs\\smoke",
+  "seeds": [
+    42
+  ],
+  "selection_seeds": [
+    42
+  ],
+  "specs": [
+    {
+      "channels": [
+        "RF",
+        "VM"
+      ],
+      "d_model": 128,
+      "dropout": 0.1,
+      "encoder_layers": 1,
+      "feature_scaler": "minmax",
+      "feature_set": "original",
+      "ff_dim": 256,
+      "heads": 4,
+      "horizons": [
+        1
+      ],
+      "model_name": "mlp",
+      "name": "mlp_rf_vm_original",
+      "role": "baseline",
+      "target_scaler": "none"
+    },
+    {
+      "channels": [
+        "RF",
+        "VM"
+      ],
+      "d_model": 128,
+      "dropout": 0.1,
+      "encoder_layers": 1,
+      "feature_scaler": "minmax",
+      "feature_set": "original",
+      "ff_dim": 256,
+      "heads": 4,
+      "horizons": [
+        1
+      ],
+      "model_name": "transformer",
+      "name": "transformer_rf_vm_original",
+      "role": "candidate",
+      "target_scaler": "none"
+    },
+    {
+      "channels": [
+        "RF",
+        "BF",
+        "VM",
+        "ST"
+      ],
+      "d_model": 192,
+      "dropout": 0.05,
+      "encoder_layers": 2,
+      "feature_scaler": "standard",
+      "feature_set": "extended",
+      "ff_dim": 384,
+      "heads": 6,
+      "horizons": [
+        1
+      ],
+      "model_name": "transformer",
+      "name": "transformer_4ch_extended",
+      "role": "candidate",
+      "target_scaler": "standard"
+    },
+    {
+      "channels": [
+        "RF",
+        "BF",
+        "VM",
+        "ST"
+      ],
+      "d_model": 192,
+      "dropout": 0.05,
+      "encoder_layers": 2,
+      "feature_scaler": "standard",
+      "feature_set": "extended",
+      "ff_dim": 384,
+      "heads": 6,
+      "horizons": [
+        1
+      ],
+      "model_name": "causalgaitnet",
+      "name": "causalgaitnet_4ch_extended",
+      "role": "candidate",
+      "target_scaler": "standard"
+    },
+    {
+      "channels": [
+        "RF",
+        "BF",
+        "VM",
+        "ST"
+      ],
+      "d_model": 192,
+      "dropout": 0.05,
+      "encoder_layers": 2,
+      "feature_scaler": "standard",
+      "feature_set": "extended",
+      "ff_dim": 384,
+      "heads": 6,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "model_name": "causalgaitnet",
+      "name": "causalgaitnet_multihorizon_4ch_extended",
+      "role": "candidate",
+      "target_scaler": "standard"
+    }
+  ],
+  "subjects": [
+    "1Nmar"
+  ]
+}

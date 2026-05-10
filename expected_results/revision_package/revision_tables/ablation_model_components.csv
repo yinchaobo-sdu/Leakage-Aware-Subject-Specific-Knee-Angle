@@ -1,0 +1,4 @@
+comparison,baseline_model,enhanced_model,baseline_MAE,baseline_RMSE,enhanced_MAE,enhanced_RMSE,delta_MAE,delta_RMSE
+2-channel original Transformer vs 4-channel extended Transformer,transformer_rf_vm_original,transformer_4ch_extended,9.057457024400884,13.978785104769894,6.296599355610934,9.033915257953181,-2.76085766878995,-4.944869846816713
+4-channel Transformer vs CausalGaitNet,transformer_4ch_extended,causalgaitnet_4ch_extended,6.296599355610934,9.033915257953181,6.101559270511974,8.95339552706326,-0.19504008509896043,-0.0805197308899217
+single-horizon vs multi-horizon CausalGaitNet,causalgaitnet_4ch_extended,causalgaitnet_multihorizon_4ch_extended,6.101559270511974,8.95339552706326,6.224381663582542,9.168607272051997,0.1228223930705683,0.2152117449887374

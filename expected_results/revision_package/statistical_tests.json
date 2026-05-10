@@ -1,0 +1,51 @@
+{
+  "MAE": {
+    "bootstrap_95ci": [
+      5.407146384770219,
+      7.408601274273611
+    ],
+    "max": 13.154154777526855,
+    "mean": 6.296599355610934,
+    "median": 5.848852872848511,
+    "min": 3.5987370014190674,
+    "std": 2.4580293664015453,
+    "subjects_below_paper_threshold": 1
+  },
+  "RMSE": {
+    "bootstrap_95ci": [
+      8.01477891782995,
+      10.222632034831994
+    ],
+    "max": 15.429504053498093,
+    "mean": 9.033915257953181,
+    "median": 8.851661573863222,
+    "min": 5.835268771299295,
+    "std": 2.7530479390633067,
+    "subjects_below_paper_threshold": 0
+  },
+  "healthy_unhealthy_tests": [
+    {
+      "cliffs_delta_healthy_vs_unhealthy": 0.45454545454545453,
+      "difference_healthy_minus_unhealthy": 2.1948130997744473,
+      "healthy_mean": 7.394005905498158,
+      "metric": "MAE",
+      "permutation_p_two_sided": 0.031984007996002,
+      "test": "two-sided permutation test on subject-level means",
+      "unhealthy_mean": 5.199192805723711
+    },
+    {
+      "cliffs_delta_healthy_vs_unhealthy": 0.2892561983471074,
+      "difference_healthy_minus_unhealthy": 1.9449386259382084,
+      "healthy_mean": 10.006384570922286,
+      "metric": "RMSE",
+      "permutation_p_two_sided": 0.10044977511244378,
+      "test": "two-sided permutation test on subject-level means",
+      "unhealthy_mean": 8.061445944984078
+    }
+  ],
+  "main_model": "transformer_4ch_extended",
+  "target": {
+    "MAE": 3.707,
+    "RMSE": 4.691
+  }
+}

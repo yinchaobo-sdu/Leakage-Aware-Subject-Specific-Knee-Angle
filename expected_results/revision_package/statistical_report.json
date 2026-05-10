@@ -1,0 +1,63 @@
+{
+  "models": [
+    {
+      "mae_mean": 6.101559270511974,
+      "mae_std": 2.182337476065552,
+      "main_result": false,
+      "model": "causalgaitnet_4ch_extended",
+      "n_subjects": 22,
+      "rmse_mean": 8.95339552706326,
+      "rmse_std": 2.86749115323149,
+      "subjects_beating_paper_mae": 2,
+      "subjects_beating_paper_rmse": 1
+    },
+    {
+      "mae_mean": 6.224381663582542,
+      "mae_std": 2.8700521752070194,
+      "main_result": false,
+      "model": "causalgaitnet_multihorizon_4ch_extended",
+      "n_subjects": 22,
+      "rmse_mean": 9.168607272051997,
+      "rmse_std": 3.692199408863454,
+      "subjects_beating_paper_mae": 3,
+      "subjects_beating_paper_rmse": 1
+    },
+    {
+      "mae_mean": 8.422645330429077,
+      "mae_std": 2.996498289276276,
+      "main_result": false,
+      "model": "mlp_rf_vm_original",
+      "n_subjects": 22,
+      "rmse_mean": 12.470290284281617,
+      "rmse_std": 4.2452390392621835,
+      "subjects_beating_paper_mae": 0,
+      "subjects_beating_paper_rmse": 0
+    },
+    {
+      "mae_mean": 6.296599355610934,
+      "mae_std": 2.4580293664015453,
+      "main_result": true,
+      "model": "transformer_4ch_extended",
+      "n_subjects": 22,
+      "rmse_mean": 9.033915257953181,
+      "rmse_std": 2.7530479390633067,
+      "subjects_beating_paper_mae": 1,
+      "subjects_beating_paper_rmse": 0
+    },
+    {
+      "mae_mean": 9.057457024400884,
+      "mae_std": 3.2493343409025814,
+      "main_result": false,
+      "model": "transformer_rf_vm_original",
+      "n_subjects": 22,
+      "rmse_mean": 13.978785104769894,
+      "rmse_std": 4.880831230801812,
+      "subjects_beating_paper_mae": 0,
+      "subjects_beating_paper_rmse": 0
+    }
+  ],
+  "target": {
+    "mae": 3.707,
+    "rmse": 4.691
+  }
+}

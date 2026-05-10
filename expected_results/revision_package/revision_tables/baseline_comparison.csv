@@ -1,0 +1,9 @@
+protocol,model,n_subjects,main_result,ME,MAE,RMSE,notes
+enhanced_publishable_purged_temporal,causalgaitnet_4ch_extended,22,False,-0.9649720410393043,6.101559270511974,8.95339552706326,Exploratory candidate/baseline
+enhanced_publishable_purged_temporal,causalgaitnet_multihorizon_4ch_extended,22,False,-0.9424998191269961,6.224381663582542,9.168607272051997,Exploratory candidate/baseline
+enhanced_publishable_purged_temporal,mlp_rf_vm_original,22,False,0.47631730139255524,8.422645330429077,12.470290284281617,Exploratory candidate/baseline
+enhanced_publishable_purged_temporal,transformer_4ch_extended,22,True,-1.036351821639321,6.296599355610934,9.033915257953181,Validation-selected main result
+enhanced_publishable_purged_temporal,transformer_rf_vm_original,22,False,-1.3104327510703693,9.057457024400884,13.978785104769894,Exploratory candidate/baseline
+strict_publishable_purged_temporal,mlp,22,historical_baseline,0.5701509673487056,8.491184624758633,12.620241456057919,Earlier two-channel publishable run
+strict_publishable_purged_temporal,transformer_publishable_ensemble,22,historical_baseline,0.08233585411852057,8.385391560467808,12.919351421906219,Earlier two-channel publishable run
+reviewer_requested_traditional_baseline,RF/SVR/XGBoost,,see_traditional_baseline_summary,,,,See traditional_baseline_summary.csv when generated.

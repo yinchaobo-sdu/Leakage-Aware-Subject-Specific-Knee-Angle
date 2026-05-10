@@ -1,0 +1,23 @@
+{
+  "beats_paper_table_i": false,
+  "evaluation_mode": "enhanced_publishable",
+  "main_result_overall": {
+    "mae": 16.57567596435547,
+    "me": -15.29091739654541,
+    "model": "transformer_rf_vm_original",
+    "n_subjects": 1,
+    "rmse": 24.674072940807346
+  },
+  "notes": [
+    "Main protocol uses purged temporal splits and train-only feature/target scalers.",
+    "No historical knee angle input, full-series scaling, random-overlap test split, nearest-label lookup, or overlap-aware label postprocessing is used.",
+    "Non-selected test rows are exploratory and must not be used for model selection."
+  ],
+  "paper_chasing_results_usable_as_main_claim": false,
+  "publication_safe_protocol": true,
+  "selected_model": "transformer_rf_vm_original",
+  "target": {
+    "mae": 3.707,
+    "rmse": 4.691
+  }
+}
